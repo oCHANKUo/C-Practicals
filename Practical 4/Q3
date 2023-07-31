@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    
+    float r, p, f;
+    int x;
+
+    p = 3.14;
+
+    printf("Input the Radius: ");
+    scanf("%f", &r);
+
+    printf("1: Circumference\n2: Area\n3: Volume of the Sphere\n\n");
+    printf("What do you want to Calculate?\n");
+    scanf("%d", &x);
+
+    switch(x)
+    {
+    case 1:
+        f = 2*p*r;
+        break;
+    case 2:
+        f = p*(r*r);
+        break;
+    case 3:
+        f = (4/3)*p*(r*r*r);
+        break;
+    }
+
+    printf("Answer: %.2f", f);
+
+
+    return 0;
+}
