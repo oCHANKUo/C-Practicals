@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   
+    int n, o;
+    float f;
+
+    f = 0;
+
+    printf("CALCULATOR\n\n");
+    printf("1: Addition\n2: Subtraction\n3: Multiplication\n4: Dvision\n0: Quit\n\n\n");
+
+    while(1)
+    {
+        printf("Number: ");
+        scanf("%d", &n);
+        printf("Operator: ");
+        scanf(" %d", &o);
+
+        if (o == 0){
+                break;
+        }
+
+        switch(o)
+        {
+        case 1:
+            f += n;
+            printf("%.2f\n\n", f);
+            break;
+        case 2:
+            f -= n;
+            printf("%.2f\n\n", f);
+            break;
+        case 3:
+            f *= n;
+            printf("%.2f\n\n", f);
+            break;
+        case 4:
+            if(n != 0)
+            {
+                f /= n;
+                printf("%.2f\n\n", f);
+            }
+            else
+            {
+                printf("Division by 0 is not allowed");
+            }
+            break;
+        default:
+            printf("Invalid Choice");
+
+        }
+
+    }
+    
+}
