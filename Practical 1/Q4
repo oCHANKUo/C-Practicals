@@ -1,0 +1,11 @@
+int main()
+{
+
+   printf("Input your 2 intergers\n");
+   scanf("%d %d", &n1, &n2);
+
+   t = n1 + n2;
+
+   printf("Total of %d and %d is %d", n1, n2, t);
+
+}
