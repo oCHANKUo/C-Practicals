@@ -1,0 +1,13 @@
+int main()
+{
+    int n1;
+    printf("Input Your Number\n");
+    scanf("%d", &n1);
+
+    if(n1%2 == 0)
+        printf("Your Number is EVEN");
+    else
+        printf("Your Number is ODD");
+
+    return 0;
+}
