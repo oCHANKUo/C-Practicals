@@ -1,0 +1,5 @@
+int main()
+{
+    printf("My Name is Chanuka Wijesinghe\nI Went to Dharmaraja College Kandy");
+    return 0;
+}
