@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    int arr[10];
+    int minValue, maxValue, sum = 0;
+    float average;
+
+    printf("Enter 10 integers for the array:\n");
+
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &arr[i]);
+        if (i == 0) {
+            minValue = arr[i];
+            maxValue = arr[i];
+        }
+        if (arr[i] < minValue) {
+            minValue = arr[i];
+        } else if (arr[i] > maxValue) {
+            maxValue = arr[i];
+        }
+        sum += arr[i];
+    }
+
+    average = (float)sum / 10;
+
+    printf("Minimum value: %d\n", minValue);
+    printf("Maximum value: %d\n", maxValue);
+    printf("Average value: %.2f\n", average);
+
+    printf("Array in reverse order: ");
+    for (int i = 9; i >= 0; i--) {
+        printf("%d ", arr[i]);
+    }
+
+    printf("\n");
+
+    return 0;
+}
