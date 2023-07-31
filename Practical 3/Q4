@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float r, d, a, c, p;
+
+    p = 3.14159;
+
+    printf("What is the Radius of the Circle?\n");
+    scanf("%f", &r);
+
+    d = 2*r;
+    c = 2*p*r;
+    a = p*r*r;
+
+    printf("Diameter:%.2f\nCircumference:%.2f\nArea:%.2f", d, c, a);
+    
+}
