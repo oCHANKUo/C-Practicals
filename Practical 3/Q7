@@ -1,0 +1,29 @@
+int main()
+{
+
+    float b, a,r, s;
+    char d;
+
+    printf("Basic Salary: ");
+    scanf("%f", &b);
+
+    printf("Press C for Colombo: ");
+    scanf("%s", &d);
+
+    printf("Monthly Sales: ");
+    scanf("%f", &s);
+
+    if(s<25000)
+        a = b*0.1;
+    else if(s<50000)
+        a = b*0.12;
+    else
+        a = b*0.15;
+
+    r = b + a;
+
+    if(d = 'c')
+        r = r + 2500;
+
+    printf("Remuneration: %.2f", r);
+}
