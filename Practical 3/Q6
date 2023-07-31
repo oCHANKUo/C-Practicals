@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   
+    char ch;
+    int i;
+
+    printf("Lower Case\na = %d,z = %d\n\nUpper Case\nA = %d,Z = %d\n\n", 'a', 'z', 'A', 'Z');
+    printf("Numbers\n0 = %d,9 = %d\n\n", '0', '9');
+    printf("Blank Space\n%d\n", ' ');
+
+    printf("\n\nInput Your Character: ");
+    scanf("%c", &ch);
+
+
+
+    i = (int)ch;
+
+    if(i>=97 && i<=122)
+        printf("%c is a Lower Case Letter\n", ch);
+    else if(i>=65 && i<=90)
+        printf("%c is an Upper Case Letter\n", ch);
+    else if(i>=48 && i<=57)
+        printf("%c is a Number\n", ch);
+    else if(i = 32)
+        printf("%c is a Blank Space", ch);
+    else
+        printf("%c is a Special Character\n", ch);
+
+   
+
+}
