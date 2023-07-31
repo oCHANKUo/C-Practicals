@@ -1,0 +1,10 @@
+int main()
+{
+    int age;
+
+    printf("Hi How Old Are Your?\n");
+    scanf("%d", &age);
+
+    printf("Welcome %d\nLet's be Friends!", age);
+    
+}
