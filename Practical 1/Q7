@@ -1,0 +1,11 @@
+int main()
+{
+   
+   int n1, n2;
+
+   printf("Input your X and Y values\n");
+   scanf("%d %d", &n1, &n2);
+
+   printf("Before: X = %d and Y = %d\nAfter: X = %d and Y =%d", n1, n2, n2, n1)
+
+}
