@@ -1,0 +1,23 @@
+int main()
+{
+
+    int i;
+    float f;
+    double d;
+    char c[50];
+
+   printf("Input your INT value");
+   scanf("%d", &i);
+
+   printf("Input your FLOAT value");
+   scanf("%f", &f);
+
+   printf("Input your DOUBLE value");
+   scanf("%lf", &d);
+
+   printf("Input your CHAR value");
+   scanf("%s", c);
+
+   printf("Your int value is %d, float value is %.2f, double value is %.2lf and char value is %s", i, f, d, c);
+
+}
