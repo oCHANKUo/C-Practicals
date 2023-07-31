@@ -1,0 +1,16 @@
+int main()
+{
+    int d, t;
+    float a;
+
+    printf("What is the Distance Travelled?\n");
+    scanf("%d", &d);
+
+    printf("What is the Time Taken?\n");
+    scanf("%d", &t);
+
+    a = (float)d/t;
+
+    printf("Average Speed is %f", a);
+    
+}
