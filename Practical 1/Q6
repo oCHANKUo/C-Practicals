@@ -1,0 +1,16 @@
+int main()
+{
+   
+   int by, a;
+   char n[50];
+
+   printf("What is Your Name?\n");
+   scanf("%[^\n]s", &n);
+   printf("What is your Birth-Year?\n");
+   scanf("%d", &by);
+
+   a = 2023-by;
+
+   printf("Your name is %s and age is %d", n, a);
+
+}
