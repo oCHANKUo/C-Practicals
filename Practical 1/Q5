@@ -1,0 +1,12 @@
+int main()
+{
+    float n1, n2, a;
+
+   printf("Input your 2 decimal numbers\n");
+   scanf("%f %f", &n1, &n2);
+
+   a = (n1+n2)/2;
+
+   printf("Average of %.2f and %.2f is %.2f", n1, n2, a);
+
+}
